@@ -21,7 +21,6 @@ export default function Layout({ children }: { children: ReactNode }) {
 			</Script>
 
 			<div id="monstercat" className={s.monstercat}>
-				<p>Yo</p>
 				{children}
 			</div>
 		</>

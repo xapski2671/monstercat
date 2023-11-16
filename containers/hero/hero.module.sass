@@ -1,0 +1,65 @@
+@import @/styles/_mixins
+
+.hero
+  width: 100%
+  height: 100vh
+  padding: 0
+  position: relative
+
+.bg_wrp
+  position: absolute
+  z-index: 0
+  width: 100%
+  height: 100%
+  background-image: url("/images/familiar_faces.webp")
+  background-repeat: no-repeat
+  background-size: cover
+  filter: blur(10px)
+  inset: 5
+
+.nav_wrp
+  width: 100%
+  @include fl-cc
+  position: relative
+  bottom: 20px
+  z-index: 10
+
+.nav
+  position: relative
+  @include fl-cc
+  width: 70vw
+  gap: 15px
+
+.item
+  @include fl-tl
+  @include fl-c
+  width: 18%
+  max-width: 18%
+  gap: 5px
+  text-transform: uppercase
+  font-family: "Monument-regular", sans-serif
+  color: #f1f1f1
+  letter-spacing: 0.05em
+  font-size: 14px
+  overflow: hidden
+  text-overflow: ellipsis
+
+.indicator
+  border: 1px solid #fff
+  height: 7px
+  width: 100%
+  margin-bottom: 15px
+
+.item_info, .item_info_title
+  max-width: 100%
+  width: 100%
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.item_info
+  margin-top: -5px
+
+.main
+  position: relative
+  z-index: 10

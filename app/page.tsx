@@ -1,3 +1,9 @@
+import Hero from "@/containers/hero"
+
 export default function Page() {
-	return <div>MonsterCat</div>
+	return (
+		<div>
+			<Hero />
+		</div>
+	)
 }
