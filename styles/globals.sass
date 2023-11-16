@@ -1,0 +1,37 @@
+@import ./_index
+@import ./_mixins
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  scroll-behavior: smooth
+
+html::before
+  content: ""
+  position: absolute
+  bottom: 0
+  left: 0
+  height: 70vh
+  width: 100%
+  background: linear-gradient(0deg, rgba(80, 165, 132, 0.2) 0%, rgba(80, 165, 132, 0) 100%)
+  z-index: 0
+
+// :root
+//   --brand-color: #50A584
+//   --brand-color-rgb: 80, 165, 132
+
+html,
+body
+  font-family: "Montserrat", sans-serif
+  font-weight: normal
+  font-size: 18px
+  color: #F1F1F1
+  background-color: black
+  background-image: url("https://cdn.monstercat.com/background-tile.webp")
+  background-repeat: repeat
+  background-attachment: scroll
+  overflow-x: hidden
+  margin: 0
+  height: 100vh
+  min-height: 100vh
