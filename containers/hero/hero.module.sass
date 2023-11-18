@@ -11,18 +11,20 @@
   z-index: 0
   width: 100%
   height: 100%
-  background-image: url("/images/familiar_faces.webp")
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
+  // background-image: url("/images/familiar_faces.webp")
+  // background-repeat: no-repeat
+  // background-position: center
   filter: blur(10px)
   inset: 5
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgb(17, 17, 17) 80%), url("/images/familiar_faces.webp") no-repeat
+  background-position: center center !important
+  background-size: cover
 
 .nav_wrp
   width: 100%
   @include fl-cc
   position: relative
-  bottom: 20px
+  top: 80px
   z-index: 10
 
 .nav
@@ -64,3 +66,69 @@
 .main
   position: relative
   z-index: 10
+  width: 100%
+  height: 100%
+  @include fl-cc
+
+.release_wrp
+  @include fl-cl
+  margin-top: 1.7rem
+
+.release_date
+  height: 28rem
+  @include fl-bl
+  margin-right: 0.62rem
+
+.release_date_p
+  writing-mode: vertical-rl
+  rotate: -180deg
+
+.release_img_wrp
+  width: 28rem
+  height: 28rem
+
+.release_img
+  width: 100%
+  object-fit: cover
+
+.release_info
+  text-transform: uppercase
+  font-family: "Monument-regular"
+  font-size: 20px
+  font-weight: 500
+  font-style: normal
+  color: #fff
+  position: relative
+  right: 115px
+
+.release_cta_btns
+  margin-top: 25px
+  @include fl-tl
+  gap: 15px
+  button
+    outline: none
+    text-transform: uppercase
+    font-family: "Monument-regular"
+    font-size: 14px
+    letter-spacing: 0.1em
+    padding: 1.2em 1.8em
+    font-weight: 500
+    font-style: normal
+    color: #fff
+
+.release_title
+  color: transparent
+  -webkit-text-stroke: 1px rgba(255,255,255,0.9)
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+
+.release_artist
+  // font-size: 22px
+  // font-weight: 300
+
+.view_release_btn
+  border: 1px solid #F68E2F
+  background: #F68E2F
+
+.player_listen_btn
+  border: 1px solid #fff
+  background: none

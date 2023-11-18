@@ -56,15 +56,30 @@ export default function Hero() {
 				</div>
 			</div>
 
-			<main
-				className={s.main}
-				style={{
-					backgroundImage: "url('images/familiar_faces.webp')",
-					backgroundRepeat: "no-repeat",
-					width: "100%",
-					height: "300px",
-				}}
-			></main>
+			<main className={s.main}>
+				<div className={s.release_wrp}>
+					<div className={s.release_date}>
+						<p className={s.release_date_p}>
+							<i>Silk</i> — Released November 14, 2023
+						</p>
+					</div>
+					<div className={s.release_img_wrp}>
+						<img
+							src="images/familiar_faces.webp"
+							alt="active_release"
+							className={s.release_img}
+						/>
+					</div>
+					<div className={s.release_info}>
+						<h1 className={s.release_title}>familiar faces</h1>
+						<h1 className={s.release_artist}>a.m.r</h1>
+						<div className={s.release_cta_btns}>
+							<button className={s.view_release_btn}>View release</button>
+							<button className={s.player_listen_btn}>Listen on player</button>
+						</div>
+					</div>
+				</div>
+			</main>
 		</div>
 	)
 }
