@@ -1,5 +1,43 @@
+@import @/styles/_mixins
+
 .mini_about
   width: 100%
+  padding: 1.5rem
   // position: absolute
   // z-index: 100
   // bottom: 0
+  @include fl-cl
+  @include fl-c
+  gap: 34px
+  h2
+    text-transform: uppercase
+    font-family: "Monument-regular"
+    letter-spacing: 0.1em
+    width: 70%
+    text-align: center
+    font-size: 32px
+    font-weight: 300
+    line-height: 1
+  p
+    font-style: italic
+    width: 75%
+    text-align: center
+    line-height: 1.8
+    margin-top: -8px
+  button
+    background: none
+    border: 1px solid #fff
+    font-size: 12px
+    font-family: "Monument-regular"
+    font-weight: 400
+    text-decoration: rgb(0,0,0)
+    padding: 1.2em 2em
+    text-transform: uppercase
+    color: #fff
+    letter-spacing: 0.15em
+    cursor: pointer
+    &:hover
+      background: #F1F1F1
+      color: black
+      border-color: #F1F1F1
+      transition: color 100ms linear, background-color 100ms linear

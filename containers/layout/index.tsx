@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 					animate: true,
 					patternWidth: 100,
 					patternHeight: 100,
-					grainOpacity: 0.04,
+					grainOpacity: 0.02,
 					grainDensity: 0.6,
 					grainWidth: 1,
 					grainHeight: 1,
