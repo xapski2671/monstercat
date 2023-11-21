@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "@/styles/globals.sass"
 import Layout from "@/containers/layout"
+import Navbar from "@/containers/navbar"
 
 export const metadata: Metadata = {
 	title: "Monstercat",
@@ -15,7 +16,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Layout>{children}</Layout>
+				<Layout>
+					<Navbar />
+					{children}
+				</Layout>
 			</body>
 		</html>
 	)

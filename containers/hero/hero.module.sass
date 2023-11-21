@@ -51,7 +51,7 @@
   border: 1px solid #fff
   height: 7px
   width: 100%
-  margin-bottom: 15px
+  margin-bottom: 13px
 
 .item_info, .item_info_title
   max-width: 100%
@@ -70,18 +70,36 @@
   height: 100%
   @include fl-cc
 
+.chev_left
+  margin-right: auto
+  fill: rgba(255,255,255,0.6)
+  fill-opacity: 0.6
+  cursor: pointer
+  &:hover
+    fill-opacity: 1
+    transition: all 0.4s ease
+
+.chev_right
+  @extend .chev_left
+  margin-right: 0
+  margin-left: auto
+
 .release_wrp
   @include fl-cl
   margin-top: 1.7rem
 
 .release_date
   height: 28rem
+  width: 1.8rem
   @include fl-bl
-  margin-right: 0.62rem
+  white-space: nowrap
 
 .release_date_p
+  position: relative
   writing-mode: vertical-rl
   rotate: -180deg
+  i
+    color: #F68E2F
 
 .release_img_wrp
   width: 28rem
@@ -118,17 +136,25 @@
 
 .release_title
   color: transparent
-  -webkit-text-stroke: 1px rgba(255,255,255,0.9)
+  -webkit-text-stroke: 1px #f1f1f1
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
-
-.release_artist
-  // font-size: 22px
-  // font-weight: 300
 
 .view_release_btn
   border: 1px solid #F68E2F
   background: #F68E2F
+  cursor: pointer
+  &:hover
+    background: #F1F1F1
+    color: black
+    border-color: #F1F1F1
+    transition: color 100ms linear, background-color 100ms linear
 
 .player_listen_btn
   border: 1px solid #fff
   background: none
+  cursor: pointer
+  &:hover
+    background: #F1F1F1
+    color: black
+    border-color: #F1F1F1
+    transition: color 100ms linear, background-color 100ms linear
