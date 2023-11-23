@@ -32,7 +32,6 @@ const swipePower = (offset: number, velocity: number) => {
 }
 
 export default function Hero() {
-	// const [currRelease, setCurrRelease] = useState(0)
 	const [[currRelease, direction], setCurrRelease] = useState([0, 0])
 	const releaseIndex = wrap(0, releases.length, currRelease)
 
@@ -65,12 +64,10 @@ export default function Hero() {
 											transition={{
 												duration: 6,
 												ease: "linear",
-												// repeat: Infinity,
 											}}
 											onAnimationComplete={() => {
 												paginate(1)
 											}}
-											// onAnimationComplete={()={setCurrRelease(prev=>prev+1)}}
 										></motion.div>
 									)}
 								</div>
@@ -93,7 +90,6 @@ export default function Hero() {
 					height="54"
 					viewBox="0 0 24 24"
 					className={s.chev_left}
-					// style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
 					onClick={() => {
 						paginate(-1)
 					}}
@@ -167,7 +163,6 @@ export default function Hero() {
 					height="54"
 					viewBox="0 0 24 24"
 					className={s.chev_right}
-					// style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
 					onClick={() => {
 						paginate(1)
 					}}
